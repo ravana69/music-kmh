@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from music.kmh.zone/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jun 2022 05:21:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Visualizer - kmh.zone</title>
+    <link rel="stylesheet" href="style.css" type="text/css"></link>
+  </head>
+  <body onload="setup()">
+    <div id="wrapper">
+      <canvas id="canvas"></canvas>
+      <div id="options" class="panel">
+        <label for="colorSelect">Colors: </label><select id="colorSelect">
+          <option value="rgb6">Rainbow</option>
+          <option value="rgb1">Yellow/Red</option>
+          <option value="rbg1">Pink/Magenta</option>
+          <option value="bgr1">Sky Blue/Dark Blue</option>
+          <option value="brg1">Teal/Green</option>
+          <option value="grb1">Yellow/Green</option>
+          <option value="gbr1">Magenta/Purple</option>
+        </select>
+        <br><label for="barNum">Number of Bars: </label><input type="range" id="barNum" min=5 max=11 value=6>
+        <br><label for="bars">Bars </label><input type="checkbox" class="checkboxes" id="bars" checked>
+        <br><label for="lines">Lines </label><input type="checkbox" class="checkboxes" id="lines" checked>
+        <br><label for="circles">Circles </label><input type="checkbox" class="checkboxes" id="circles" checked>
+        <br><div id="fileUploader"><button onclick="document.getElementById('mp3').click()">Choose File</button><input type="file" id="mp3" onchange="useMp3(this.files)"> or <button onclick="setup()">Use Microphone</button></div>
+      </div>
+      <div id="tabs"><a href="javascript:void(0)" onclick="toggleTab('options')"><div class="tab" id="optionsTab">Options</div></a></div>
+    </div>
+    <script src="visualizer.js" type="text/javascript"></script>
+  </body>
+
+<!-- Mirrored from music.kmh.zone/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jun 2022 05:21:48 GMT -->
+</html>

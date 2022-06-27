@@ -1,0 +1,67 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  padding: 0em;
+  margin: 0;
+  font-family: sans-serif;
+}
+#fileUploader {
+  overflow: hidden;
+  position: relative;
+}
+#fileUploader input {
+  display: none;
+}
+#canvas {
+  position: absolute;
+  z-index: -1;
+}
+#wrapper {
+  height: 100%;
+  width: 100%;
+}
+.hidden {
+  visiblity: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+.shown {
+  visiblity: visible;
+  opacity: 100;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+label, #fileUploader {
+  color: #f2f2f2;
+}
+.checkboxes {
+  transform: scale(1.5);
+}
+#colorSelect, label, #barNum, .checkboxes, #fileUploader {
+  font-size: 1em;
+}
+#colorSelect, #barNum, .checkboxes, #fileUploader {
+  margin: 0.5em;
+}
+#tabs {
+  float: right;
+  height: 100%;
+  width: 3em;
+  background-color: rgba(33, 33, 33, 0.75);
+}
+.tab {
+  color: #f2f2f2;
+  float: right;
+  font-size: 2em;
+  margin-top: 2.5em;
+  transform: rotate(-90deg);
+  width: 100%;
+ }
+.panel {
+  padding: 1vh;
+  text-align: right;
+  display: none;
+  width: 20%;
+  float: right;
+  height: 98vh;
+  background-color: rgba(33, 33, 33, 0.75);
+}
